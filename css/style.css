@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #4D6A39;
+
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    z-index: 1;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    min-height: 5vh;
+    background-color: #183A37;
+    float: left;
+}
+
+
+
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 2vw 2vw 2vw 2vw;
+}
+
+.menu li a:hover{
+    color: white;
+    display: block;
+    text-decoration: none;
+    background-color: #183A37;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+
+h1{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home{
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#home1{
+    background: url("../media/fundo2.jpg");
+    backdrop-filter: blur(3px);
+    max-width:1200px;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+#home img{
+    max-width:300px;
+    max-height:300px;
+    min-height:300px; 
+    min-width:300px;
+    display: block;
+    margin: 0px auto;
+    border: #183A37 ;
+}
+
+#home div{
+    flex: 1 1 350px;
+    margin: 10px;
+}
+
+#home div p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 4vh;
+}
+
+#contatos{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10vw;
+    background: url("../media/leaves-7158637_1920.jpg");
+    width: 100%;
+    backdrop-filter: blur(5px);
+    
+}
+
+.formulario{
+    width: 60vw;
+    backdrop-filter: blur(2px);
+    padding: 30px;
+    border:1px solid rgb(20, 51, 22);
+    margin: 0 auto;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5vh;
+}
+
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+
+#contatos h1{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#contatos p{
+    font-size: 30px;
+    color: white;
+}
+
+#simg{
+    width: 10vw;
+    height: 10vw;
+}
+
+#sobre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-attachment: fixed;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background: url("../media/hd-wallpaper-3469942_192.jpg");
+    margin: 3vw;
+
+
+
+}
+
+#textsobre {
+    margin: 0 auto;
+    background-color: #4D6A39;
+    width: 40vw;
+    height: 30vw;
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 0.5vw;
+
+
+}
+
+#top{
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    background: url("../media/leaves-318743_1920.jpg");
+    background-repeat:inherit ;
+    padding-top: 13vh;
+    padding-bottom: 10vh;
+}
+
+
+
+#top h1{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    color: #FFFFFF;
+    padding: 12vw;
+}
+
+#topfoto{
+    padding-bottom: 20px;
+}
+
+
+#sobre img{
+    width: 220px;
+    height: 220px;
+}
+
+#top img{
+    width: 350px;
+    height: 360px;
+}
+
+
+#botao{
+    padding: 1.5vh;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter";
+    border: 3px solid #FFFFFF;
+    border-radius: 57px;
+}
+
+nav { 
+    width: 100%;
+    float: left;
+    padding: 10px 0px; 
+    text-align: center;
+    }
+
+nav ul li {
+    list-style: none;
+    display: inline; 
+    text-align: center;
+}
+
+nav ul li a {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font: 2vw; 
+    text-decoration: none;
+    text-align: center;
+}
+#menu, .menu {	
+    display: none;
+}
+
+@media screen and (max-width: 748px) {
+
+	nav {
+         display: none;
+         transition: .5s;
+         background-color: #183A37;
+
+        }
+
+	#menu:checked ~ nav {
+		display: block;
+
+	}
+	.menu { 
+        display: block;
+        padding-left: 0.85vw;
+        padding-right: 0.85vw;
+        padding-top: 0.50vw;
+        padding-bottom: 0.50vw;
+        float: right;
+        color: rgb(255, 255, 255);
+        font-size: 7vw;
+        background-color: #183A37;
+
+        }
+
+	nav ul { 
+        margin: 0;
+        padding: 0;
+        background-color: #183A37;
+
+
+    }
+
+	nav ul li {
+        display: block;
+        background-color: #183A37;
+
+    }
+	nav ul li a {
+        width: 100%;
+        float: left;
+        font-size: 20px;
+        background-color: #183A37;
+        }
+
+}
